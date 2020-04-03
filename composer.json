@@ -1,0 +1,24 @@
+{
+  "name": "trivedigital/mstart-magento2",
+  "description": "Extension provides direct integration with mStart's Internet Payment Gateway for Magento 2.",
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "require": {
+    "php": "^7.1.0",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Trive\\Mstart\\": ""
+    }
+  },
+  "keywords": [
+    "magento 2",
+    "mstart",
+    "internet payment gateway",
+    "IPG"
+  ]
+}
