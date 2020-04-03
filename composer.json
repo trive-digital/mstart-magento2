@@ -3,6 +3,7 @@
   "description": "Extension provides direct integration with mStart's Internet Payment Gateway for Magento 2.",
   "type": "magento2-module",
   "version": "1.0.0",
+  "license": "MIT",
   "require": {
     "php": "^7.1.0",
     "ext-json": "*"
