@@ -128,7 +128,7 @@ class Resolver
         $paymentData["trantype"] = $this->getTranType("payment");
         $paymentData["submit_type"] = $this->getSubmitType("payment");
         $paymentData["purchase_amount"] = round($quote->getGrandTotal(), 2);
-        $paymentData["purchase_currency"] = $configData["currency"];
+        $paymentData["purchase_currency"] = $this->getCurrency($configData);;
         $paymentData["purchase_description"] = $quote->getCustomerNote();
         $paymentData["customer_lang"] = $configData["customer_lang"];
         $paymentData["customer_name"] = $quote->getBillingAddress()->getFirstname();
